@@ -60,12 +60,14 @@ defineProps({
 	width: 100%;
 	height: 100%;
 	border: 1px solid #ededed;
-	box-sizing: border-box;
+	// box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	color: #fff;
 	font-size: 14px;
+	overflow: hidden;
 	.cover {
+		width: 100%;
 		height: 100px;
 		background-size: cover;
 		display: flex;
@@ -84,11 +86,17 @@ defineProps({
 		}
 	}
 	.footer {
-		padding: 2px 4px;
+		// padding: 2px 4px;
 		color: #000;
+		width: 100%;
     &-title {
-       
+      padding: 2px 4px;
     }
+		&-footer {
+			padding: 2px 4px;
+			display: flex;
+			justify-content: space-between;
+		}
 		// display: flex;
     // flex-direction: column;
 		// justify-content: space-between;
